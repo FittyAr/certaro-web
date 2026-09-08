@@ -1,4 +1,4 @@
-const CHANGELOG_URL = "https://raw.githubusercontent.com/FittyAr/Certaro/main/CHANGELOG.md";
+const CHANGELOG_URL = null;
 
 // Map technical categories to user-friendly labels
 const GROUP_LABELS = {
@@ -60,21 +60,25 @@ async function loadChangelog() {
   const fallback = document.getElementById("changelog-fallback");
 
   try {
-    const res = await fetch(CHANGELOG_URL, { cache: "no-store" });
-    if (!res.ok) throw new Error("fetch failed");
-    const md = await res.text();
-    const entries = parseChangelog(md);
-    if (!entries.length) throw new Error("no entries");
+    if (CHANGELOG_URL) {
+      const res = await fetch(CHANGELOG_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("fetch failed");
+      const md = await res.text();
+      const entries = parseChangelog(md);
+      if (!entries.length) throw new Error("no entries");
 
-    cachedEntries = entries;
-    renderChangelog(entries, container);
-    if (fallback) fallback.style.display = "none";
+      cachedEntries = entries;
+      renderChangelog(entries, container);
+      if (fallback) fallback.style.display = "none";
+      return;
+    }
   } catch (e) {
     // Show fallback content with full localization
-    renderFallback();
   } finally {
     if (loading) loading.style.display = "none";
   }
+
+  renderFallback();
 }
 
 function parseChangelog(md) {

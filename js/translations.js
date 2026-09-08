@@ -1,7 +1,7 @@
 const translations = {
   es: {
     "meta.title": "Certaro — Tu obra, bajo control",
-    "meta.description": "Gestión completa para contratistas eléctricos: obras, trabajos, caja, certificaciones UOCRA, facturas, liquidaciones y asistencia. Sin suscripciones, tus datos siempre con vos.",
+    "meta.description": "Gestión completa para contratistas eléctricos: obras, trabajos, caja, certificaciones UOCRA, facturas, liquidaciones y asistencia. Control total y tus datos siempre con vos.",
 
     "skip.content": "Saltar al contenido principal",
 
@@ -16,7 +16,7 @@ const translations = {
 
     "hero.badge": "Para contratistas eléctricos",
     "hero.title": "Tu obra,<br>bajo control.",
-    "hero.subtitle": "Movimientos, obras, certificaciones, facturas y sueldos — todo en un solo lugar. Sin suscripciones, sin nube, sin depender de internet.",
+    "hero.subtitle": "Movimientos, obras, certificaciones, facturas y sueldos — todo en un solo lugar. Control operativo, financiero y modular en constante evolución.",
     "hero.cta": "Solicitar demo",
     "hero.secondary": "Ver cómo funciona",
 
@@ -36,8 +36,8 @@ const translations = {
     "benefits.title": "Todo ordenado, todo a mano",
     "benefits.b1.title": "Todo en un solo lugar",
     "benefits.b1.desc": "Obras, movimientos, facturas, liquidaciones y asistencia conectados entre sí.",
-    "benefits.b2.title": "Sin suscripciones",
-    "benefits.b2.desc": "Comprás una vez y es tuyo para siempre. Sin pagos mensuales, sin sorpresas ni bloqueos.",
+    "benefits.b2.title": "En evolución a ERP",
+    "benefits.b2.desc": "Sistema comercial en constante expansión, pensado para ampliarse de forma modular hasta convertirse en un ERP integral.",
     "benefits.b3.title": "Tus datos, en tu máquina",
     "benefits.b3.desc": "Sin nube, sin depender de internet. Tu información comercial siempre segura y disponible.",
     "benefits.b4.title": "Reportes al instante",
@@ -100,7 +100,7 @@ const translations = {
     "changelog.loading": "Cargando novedades…",
     "changelog.error": "No se pudieron consultar las novedades remotas. Mostrando versión local.",
     "changelog.back": "← Volver al inicio",
-    "changelog.fallback.title": "Certaro v0.1 — Primera versión pública",
+    "changelog.fallback.title": "Certaro v0.1 — Versión inicial",
     "changelog.fallback.date": "Septiembre 2026",
     "changelog.fallback.items": "Panel de control con balance general, cotización del dólar y alertas|Gestión de obras y trabajos con estados en tiempo real|Flujo de caja con categorías jerárquicas y conversión ARS/USD|Certificaciones de avance congeladas con ajuste por índice UOCRA|Facturación con pagos parciales, estados y control de mora|Liquidaciones automáticas calculadas desde la asistencia|Grilla mensual de asistencia por empleado con horas y feriados|Importador automático desde la base de datos del sistema anterior",
 
@@ -113,7 +113,7 @@ const translations = {
   },
   en: {
     "meta.title": "Certaro — Your site, under control",
-    "meta.description": "Complete management for electrical contractors: sites, jobs, cash flow, UOCRA certificates, invoices, payroll and attendance. No subscriptions, your data stays with you.",
+    "meta.description": "Complete management for electrical contractors: sites, jobs, cash flow, UOCRA certificates, invoices, payroll and attendance. Full control, your data stays with you.",
 
     "skip.content": "Skip to main content",
 
@@ -128,7 +128,7 @@ const translations = {
 
     "hero.badge": "For electrical contractors",
     "hero.title": "Your site,<br>under control.",
-    "hero.subtitle": "Cash flow, sites, certificates, invoices and payroll — all in one place. No subscriptions, no cloud, no internet needed.",
+    "hero.subtitle": "Cash flow, sites, certificates, invoices and payroll — all in one place. Operational, financial and modular management in continuous evolution.",
     "hero.cta": "Request demo",
     "hero.secondary": "See how it works",
 
@@ -148,8 +148,8 @@ const translations = {
     "benefits.title": "Everything tidy, everything at hand",
     "benefits.b1.title": "All in one place",
     "benefits.b1.desc": "Sites, movements, invoices, payroll and attendance connected together.",
-    "benefits.b2.title": "No subscriptions",
-    "benefits.b2.desc": "Buy once, own it forever. No monthly fees, no surprises, no lock-in.",
+    "benefits.b2.title": "Evolving into an ERP",
+    "benefits.b2.desc": "A commercial system in active expansion, designed to grow modularly into a comprehensive ERP for your business.",
     "benefits.b3.title": "Your data, on your machine",
     "benefits.b3.desc": "No cloud, no internet needed. Your business information is always safe and available.",
     "benefits.b4.title": "Instant reports",
@@ -212,7 +212,7 @@ const translations = {
     "changelog.loading": "Loading updates…",
     "changelog.error": "Could not fetch remote updates. Showing local release.",
     "changelog.back": "← Back to home",
-    "changelog.fallback.title": "Certaro v0.1 — First public release",
+    "changelog.fallback.title": "Certaro v0.1 — Initial release",
     "changelog.fallback.date": "September 2026",
     "changelog.fallback.items": "Dashboard with balance overview, USD rate and overdue alerts|Site and job management with real-time state tracking|Cash ledger with hierarchical categories and ARS/USD support|Frozen progress certificates with UOCRA index adjustment|Invoicing with partial payments, states and overdue tracking|Automatic payroll settlements calculated from attendance|Monthly attendance grid per employee with overtime and holidays|Automatic database importer from the legacy C# system",
 
