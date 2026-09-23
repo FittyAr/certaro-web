@@ -5,6 +5,7 @@ desktop.ini
 
 # Node / frontend dependencies & build outputs
 node_modules/
+.astro/
 dist/
 dist-ssr/
 coverage/

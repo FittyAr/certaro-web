@@ -34,6 +34,7 @@
       <a href="#problems" data-i18n="nav.benefits">Beneficios</a>
       <a href="#how" data-i18n="nav.how">Cómo funciona</a>
       <a href="#gallery" data-i18n="nav.gallery">Capturas</a>
+      <a href="#pricing" data-i18n="nav.pricing">Precios</a>
       <a href="changelog.html" data-i18n="nav.changelog">Novedades</a>
       <a href="#contact" data-i18n="nav.contact">Contacto</a>
     </nav>
@@ -59,6 +60,7 @@
     <a href="#problems" onclick="toggleMobileNav(false)" data-i18n="nav.benefits">Beneficios</a>
     <a href="#how" onclick="toggleMobileNav(false)" data-i18n="nav.how">Cómo funciona</a>
     <a href="#gallery" onclick="toggleMobileNav(false)" data-i18n="nav.gallery">Capturas</a>
+    <a href="#pricing" onclick="toggleMobileNav(false)" data-i18n="nav.pricing">Precios</a>
     <a href="changelog.html" onclick="toggleMobileNav(false)" data-i18n="nav.changelog">Novedades</a>
     <a href="#contact" onclick="toggleMobileNav(false)" data-i18n="nav.contact">Contacto</a>
   </nav>
@@ -216,6 +218,385 @@
   </div>
 </section>
 
+<!-- PRECIOS Y PLANES -->
+<section id="pricing" class="section container reveal">
+  <div class="section-header">
+    <span class="eyebrow" data-i18n="pricing.eyebrow">Planes y Licenciamiento</span>
+    <h2 class="section-title" data-i18n="pricing.title">Elegí el plan a la medida<br>de tu operativa</h2>
+    <p class="section-subtitle" data-i18n="pricing.subtitle">Desde electricistas independientes hasta constructoras con cuadrillas múltiples. Comenzá con tus datos locales y escalá a arquitectura servidor sin fricción.</p>
+  </div>
+
+  <!-- Fila de Tarjetas de Planes -->
+  <div class="pricing-grid">
+    <!-- Plan 1: Community -->
+    <div class="pricing-card">
+      <div class="pricing-card-header">
+        <h3 class="pricing-plan-name" data-i18n="pricing.plan.community.name">Community</h3>
+        <div class="pricing-plan-period" data-i18n="pricing.period.free">Uso personal</div>
+        <p class="pricing-card-desc" data-i18n="pricing.plan.community.desc">Ideal para contratistas independientes y electricistas que gestionan sus propias obras y gastos.</p>
+      </div>
+      <div class="pricing-card-action">
+        <a class="btn btn-ghost" href="#contact" data-i18n="pricing.cta.free">Comenzar gratis</a>
+      </div>
+      <ul class="pricing-card-features">
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.community.f1">1 puesto administrativo local</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.community.f2">Base de datos SQLite en tu máquina</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.community.f3">Hasta 3 proyectos u obras activas</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.community.f4">Flujo de caja y movimientos</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.community.f5">Certificados de avance congelados</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.community.f6">Soporte comunitario y documentación</span></li>
+      </ul>
+    </div>
+
+    <!-- Plan 2: Essential -->
+    <div class="pricing-card">
+      <div class="pricing-card-header">
+        <h3 class="pricing-plan-name" data-i18n="pricing.plan.essential.name">Essential</h3>
+        <div class="pricing-plan-period" data-i18n="pricing.period.starter">Para pymes y talleres</div>
+        <p class="pricing-card-desc" data-i18n="pricing.plan.essential.desc">Para pequeñas empresas instaladoras que necesitan facturación ordenada, cobros y liquidación de quincenas.</p>
+      </div>
+      <div class="pricing-card-action">
+        <a class="btn btn-ghost" href="#contact" data-i18n="pricing.cta.quote">Consultar plan</a>
+      </div>
+      <div class="pricing-card-features-title" data-i18n="pricing.plan.essential.f0">Todo lo de Community, más:</div>
+      <ul class="pricing-card-features">
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.essential.f1">Obras y proyectos ilimitados</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.essential.f2">Facturación con mora y recibos</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.essential.f3">Liquidaciones UOCRA automáticas</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.essential.f4">Reportes ejecutivos en PDF, Excel y Word</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.essential.f5">Importador desde sistemas anteriores</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.essential.f6">Soporte por email en menos de 24 hs</span></li>
+      </ul>
+    </div>
+
+    <!-- Plan 3: Scale (Destacado) -->
+    <div class="pricing-card featured">
+      <div class="pricing-card-badge" data-i18n="pricing.badge.popular">MÁS POPULAR</div>
+      <div class="pricing-card-header">
+        <h3 class="pricing-plan-name" data-i18n="pricing.plan.scale.name">Scale</h3>
+        <div class="pricing-plan-period" data-i18n="pricing.period.growing">Para cuadrillas en obra</div>
+        <p class="pricing-card-desc" data-i18n="pricing.plan.scale.desc">La solución completa para empresas con múltiples cuadrillas, control visual de tareas y servidores compartidos.</p>
+      </div>
+      <div class="pricing-card-action">
+        <a class="btn btn-primary" href="#contact" data-i18n="pricing.cta.demo">Solicitar demo</a>
+      </div>
+      <div class="pricing-card-features-title" data-i18n="pricing.plan.scale.f0">Todo lo de Essential, más:</div>
+      <ul class="pricing-card-features">
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.scale.f1">Multi-Base de Datos (MySQL / PostgreSQL / SQLite)</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.scale.f2">Tableros Kanban de obra interactivos</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.scale.f3">Calendario integral con vista de cuadrillas y recursos</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.scale.f4">Cuentas bancarias, cheques y conciliación</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.scale.f5">Bimonetarismo con cotización ARS / USD</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.scale.f6">Onboarding asistido y soporte prioritario</span></li>
+      </ul>
+    </div>
+
+    <!-- Plan 4: Enterprise -->
+    <div class="pricing-card enterprise">
+      <div class="pricing-card-header">
+        <h3 class="pricing-plan-name" data-i18n="pricing.plan.enterprise.name">Enterprise</h3>
+        <div class="pricing-plan-period" data-i18n="pricing.period.custom">A medida / Despliegue dedicado</div>
+        <p class="pricing-card-desc" data-i18n="pricing.plan.enterprise.desc">Para constructoras de envergadura, pañoles centrales, facturación fiscal directa y requerimientos corporativos.</p>
+      </div>
+      <div class="pricing-card-action">
+        <a class="btn btn-ghost" href="#contact" data-i18n="pricing.cta.sales">Hablar con ventas</a>
+      </div>
+      <div class="pricing-card-features-title" data-i18n="pricing.plan.enterprise.f0">Todo lo de Scale, más:</div>
+      <ul class="pricing-card-features">
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.enterprise.f1">Facturación electrónica ARCA / CAE directa</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.enterprise.f2">Control de stock, pañol y transferencias</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.enterprise.f3">Punto de Venta de mostrador (POS) y turnos</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.enterprise.f4">Seguridad RBAC, roles, 2FA y Single Sign-On (SSO)</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.enterprise.f5">Despliegue On-Premise o nube privada</span></li>
+        <li><span class="check-icon">✓</span> <span data-i18n="pricing.plan.enterprise.f6">SLA garantizado y soporte telefónico directo</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Paquetes de Modulos Adicionales (Add-ons) -->
+  <div class="addons-section">
+    <div class="section-header">
+      <span class="eyebrow" data-i18n="pricing.addons.eyebrow">Módulos de Expansión</span>
+      <h3 class="section-title" data-i18n="pricing.addons.title">Paquetes modulares adicionales</h3>
+      <p class="section-subtitle" data-i18n="pricing.addons.subtitle">Certaro evoluciona como un ERP modular. Incorporá módulos a demanda cuando tu operativa lo demande.</p>
+    </div>
+    <div class="addons-grid">
+      <div class="addon-card">
+        <div class="addon-card-icon">🏛️</div>
+        <h4 data-i18n="pricing.addon.fiscal.title">Módulo Fiscal ARCA</h4>
+        <p data-i18n="pricing.addon.fiscal.desc">Conexión directa con webservices de ARCA (AFIP). Emisión de Facturas A, B, C y M, Notas de Crédito, CAE automático y Libro IVA Digital.</p>
+      </div>
+      <div class="addon-card">
+        <div class="addon-card-icon">📦</div>
+        <h4 data-i18n="pricing.addon.logistics.title">Logística, Pañol y Stock</h4>
+        <p data-i18n="pricing.addon.logistics.desc">Gestión de depósitos centrales y obradores de obra, remitos de recepción, 3-way matching en compras y trazabilidad de insumos.</p>
+      </div>
+      <div class="addon-card">
+        <div class="addon-card-icon">🏷️</div>
+        <h4 data-i18n="pricing.addon.whitelabel.title">Marca Blanca / White-Label</h4>
+        <p data-i18n="pricing.addon.whitelabel.desc">Personalizá la plataforma con la identidad corporativa de tu empresa o red de contratistas: paleta de colores, logos, dominio y reportes a medida.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabla Comparativa Detallada ZeroTier Style -->
+  <div class="comparison-section">
+    <div class="section-header">
+      <span class="eyebrow" data-i18n="pricing.table.eyebrow">Comparativa Técnica</span>
+      <h3 class="section-title" data-i18n="pricing.table.title">¿Qué plan se adapta a tu empresa?</h3>
+      <p class="section-subtitle" data-i18n="pricing.table.subtitle">Revisá en detalle las prestaciones de cada plan para elegir la mejor configuración.</p>
+    </div>
+
+    <div class="comparison-wrapper">
+      <table class="comparison-table" aria-label="Tabla comparativa de planes y funcionalidades">
+        <thead>
+          <tr>
+            <th>Funcionalidad / Característica</th>
+            <th>Community</th>
+            <th>Essential</th>
+            <th class="featured-col">Scale ★</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Categoria 1: Capacidad y Despliegue -->
+          <tr class="table-cat-row">
+            <td colspan="5" data-i18n="pricing.cat.general">Capacidad y Despliegue</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.license">Tipo de licencia</td>
+            <td><span class="cell-val" data-i18n="val.personal_use">Personal / Libre</span></td>
+            <td><span class="cell-val" data-i18n="val.commercial">Comercial</span></td>
+            <td class="featured-col"><span class="cell-val" data-i18n="val.commercial">Comercial</span></td>
+            <td><span class="cell-val" data-i18n="val.commercial">Comercial</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.deploy">Modos de despliegue</td>
+            <td><span class="cell-val" data-i18n="val.desktop_sqlite">Escritorio (SQLite)</span></td>
+            <td><span class="cell-val" data-i18n="val.desktop_sqlite">Escritorio (SQLite)</span></td>
+            <td class="featured-col"><span class="cell-val" data-i18n="val.dual_mode">Escritorio o Red Local</span></td>
+            <td><span class="cell-val" data-i18n="val.all_modes">Escritorio, Docker o Servidor</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.offline">Operatividad 100% offline (sin internet)</td>
+            <td><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.users">Usuarios / Puestos concurrentes</td>
+            <td><span class="cell-val">1 local</span></td>
+            <td><span class="cell-val">1 - 3</span></td>
+            <td class="featured-col"><span class="cell-val">Hasta 10</span></td>
+            <td><span class="cell-val" data-i18n="val.unlimited">Ilimitados</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.db">Motores de base de datos soportados</td>
+            <td><span class="cell-val">SQLite</span></td>
+            <td><span class="cell-val">SQLite</span></td>
+            <td class="featured-col"><span class="cell-val">SQLite / MySQL / Postgres</span></td>
+            <td><span class="cell-val">Postgres / MySQL / Clúster</span></td>
+          </tr>
+
+          <!-- Categoria 2: Gestion de Obras -->
+          <tr class="table-cat-row">
+            <td colspan="5" data-i18n="pricing.cat.projects">Gestión de Obras y Operaciones</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.projects">Proyectos y obras activas</td>
+            <td><span class="cell-val">Hasta 3</span></td>
+            <td><span class="cell-val" data-i18n="val.unlimited">Ilimitados</span></td>
+            <td class="featured-col"><span class="cell-val" data-i18n="val.unlimited">Ilimitados</span></td>
+            <td><span class="cell-val" data-i18n="val.unlimited">Ilimitados</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.jobs">Órdenes de trabajo y cómputos</td>
+            <td><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.certs">Certificaciones de avance congeladas</td>
+            <td><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.kanban">Tableros Kanban por obra y globales</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.calendar">Calendario con vista de recursos y cuadrillas</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+
+          <!-- Categoria 3: Finanzas y Tesoreria -->
+          <tr class="table-cat-row">
+            <td colspan="5" data-i18n="pricing.cat.finance">Finanzas, Caja y Tesorería</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.cashflow">Flujo de caja y movimientos</td>
+            <td><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.categories">Categorías de gastos jerárquicas</td>
+            <td><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.bimonetary">Bimonetarismo (ARS / USD en tiempo real)</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-val">Manual</span></td>
+            <td class="featured-col"><span class="cell-check">✓ (Automático)</span></td>
+            <td><span class="cell-check">✓ (Multi-divisa)</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.accounts">Cuentas financieras y tesorería</td>
+            <td><span class="cell-val">1 caja</span></td>
+            <td><span class="cell-val">Cajas y Bancos</span></td>
+            <td class="featured-col"><span class="cell-val">Múltiples cuentas</span></td>
+            <td><span class="cell-val">Multi-empresa / Cuentas</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.cheques">Cartera de cheques y conciliación bancaria</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+
+          <!-- Categoria 4: Facturacion y Fiscal -->
+          <tr class="table-cat-row">
+            <td colspan="5" data-i18n="pricing.cat.billing">Facturación y Cobranzas</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.invoices">Emisión de comprobantes y recibos</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.overdue">Control de mora y pagos parciales</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.current_acc">Cuentas corrientes (Clientes y Proveedores)</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.arca">Facturación Electrónica ARCA (CAE automático)</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-val" data-i18n="val.optional">Opcional (Add-on)</span></td>
+            <td><span class="cell-check">✓ (Incluido)</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.libro_iva">Generación de Libro IVA Digital</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-val" data-i18n="val.optional">Opcional (Add-on)</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+
+          <!-- Categoria 5: Personal y Mano de Obra -->
+          <tr class="table-cat-row">
+            <td colspan="5" data-i18n="pricing.cat.payroll">Personal, Asistencia y Jornales</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.attendance">Grilla mensual de asistencia por operario</td>
+            <td><span class="cell-val">Básica</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.overtime">Cálculo de horas extras y feriados</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.uocra">Liquidaciones quincenales automáticas UOCRA</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.advances">Gestión de adelantos descontables en recibo</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+
+          <!-- Categoria 6: Seguridad y Soporte -->
+          <tr class="table-cat-row">
+            <td colspan="5" data-i18n="pricing.cat.security">Seguridad, Soporte y Extensibilidad</td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.backup">Copias de seguridad y restauración</td>
+            <td><span class="cell-val">Manual</span></td>
+            <td><span class="cell-check">✓</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓ (Automático + Snapshot)</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.rbac">Roles, permisos y auditoría de cambios</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-check">✓</span></td>
+            <td><span class="cell-check">✓ (RBAC Avanzado)</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.sso">Autenticación empresarial (SSO / 2FA / LDAP)</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-cross">—</span></td>
+            <td><span class="cell-check">✓</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.support">Nivel de soporte técnico</td>
+            <td><span class="cell-val" data-i18n="val.community_sup">Comunitario + Guías</span></td>
+            <td><span class="cell-val" data-i18n="val.email_sup">Email (&lt; 24 hs)</span></td>
+            <td class="featured-col"><span class="cell-val" data-i18n="val.priority_sup">Prioritario (WhatsApp + Email)</span></td>
+            <td><span class="cell-val" data-i18n="val.dedicated_sup">Dedicado con SLA 24/7</span></td>
+          </tr>
+          <tr>
+            <td data-i18n="pricing.feat.whitelabel">Personalización White-Label</td>
+            <td><span class="cell-cross">—</span></td>
+            <td><span class="cell-cross">—</span></td>
+            <td class="featured-col"><span class="cell-cross">—</span></td>
+            <td><span class="cell-val" data-i18n="val.optional">Opcional (Add-on)</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACTO -->
 <section id="contact" class="section container reveal">
   <div class="cta-card">
@@ -246,6 +627,7 @@
         <a href="#problems" data-i18n="nav.benefits">Beneficios</a>
         <a href="#how" data-i18n="nav.how">Cómo funciona</a>
         <a href="#gallery" data-i18n="nav.gallery">Capturas</a>
+        <a href="#pricing" data-i18n="nav.pricing">Precios</a>
         <a href="changelog.html" data-i18n="nav.changelog">Novedades</a>
         <a href="#contact" data-i18n="nav.contact">Contacto</a>
       </div>
