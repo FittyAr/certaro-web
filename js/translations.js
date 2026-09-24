@@ -202,6 +202,52 @@ const translations = {
     "val.yes": "Sí",
     "val.no": "No",
 
+    "pricing.deploy.cloud": "Cloud Gestionado (SaaS)",
+    "pricing.deploy.cloud.desc": "Nosotros nos encargamos del servidor, base de datos en la nube, backups diarios y dominio. Vos solo abrís el navegador y gestionás tu negocio.",
+    "pricing.deploy.selfhosted": "Auto-alojado (Tus datos, tu máquina)",
+    "pricing.deploy.selfhosted.desc": "Descargá la app en tu computadora o instalá el contenedor en tu propio servidor VPS o local. Cero costo recurrente de infraestructura.",
+
+    "wizard.badge": "Asistente Inteligente",
+    "wizard.title": "¿No sabés qué plan elegir? Armemos tu paquete",
+    "wizard.subtitle": "Respondé 3 simples preguntas sobre cómo trabaja tu empresa y te diremos con exactitud la configuración ideal para vos.",
+    "wizard.step1.title": "Paso 1: ¿Cuál es la actividad principal de tu empresa?",
+    "wizard.step1.opt1": "Instalaciones & Oficios (Electricidad, Climatización, Redes, Sanitarios)",
+    "wizard.step1.opt2": "Obras Menores, Reformas & Construcción (Pintura, Durlock, Albañilería)",
+    "wizard.step1.opt3": "Servicios Técnicos, Talleres & Mantenimiento Edilicio/Industrial",
+    "wizard.step1.opt4": "Venta de Mostrador, Pañol & Ferretería (Insumos, Repuestos)",
+    "wizard.step1.opt5": "Otro rubro / Actividad mixta comercial",
+
+    "wizard.step2.title": "Paso 2: ¿Cómo está compuesto tu equipo y operativa diaria?",
+    "wizard.step2.opt1": "Trabajo unipersonal / Autónomo (yo mismo gestiono y ejecuto)",
+    "wizard.step2.opt2": "Cuadrilla reducida (hasta 5-10 operarios en calle y oficina)",
+    "wizard.step2.opt3": "Múltiples cuadrillas y proyectos simultáneos con personal a cargo",
+    "wizard.step2.opt4": "Empresa consolidada con mostrador, pañol central y administración",
+
+    "wizard.step3.title": "Paso 3: ¿Qué necesidades son prioritarias en este momento?",
+    "wizard.step3.opt1": "Control de gastos, caja diaria y certificados de avance",
+    "wizard.step3.opt2": "Facturación comercial, cobros, mora y liquidaciones quincenales",
+    "wizard.step3.opt3": "Tableros Kanban de obras, calendario de cuadrillas y bancos/cheques",
+    "wizard.step3.opt4": "Facturación fiscal electrónica ARCA/CAE y control de stock/pañol",
+
+    "wizard.step4.title": "Paso 4: ¿Dónde preferís que residan tus datos?",
+    "wizard.step4.opt1": "Cloud Gestionado (acceso web desde cualquier equipo, sin instalar nada)",
+    "wizard.step4.opt2": "Auto-alojado local (app instalada en mi PC o servidor propio)",
+
+    "wizard.result.title": "Tu Configuración Recomendada:",
+    "wizard.result.plan": "Plan Sugerido:",
+    "wizard.result.deploy": "Modalidad de Despliegue:",
+    "wizard.result.addons": "Módulos / Add-ons sugeridos:",
+    "wizard.result.reason": "¿Por qué este paquete?",
+    "wizard.btn.next": "Siguiente →",
+    "wizard.btn.prev": "← Anterior",
+    "wizard.btn.reset": "Volver a empezar",
+    "wizard.btn.cta": "Solicitar esta configuración por mail",
+
+    "pricing.custom.badge": "Soluciones Flexibles",
+    "pricing.custom.title": "¿Tu operativa o rubro no encaja en estas opciones?",
+    "pricing.custom.desc": "Certaro fue concebido bajo arquitectura modular y terminología adaptable. Si tu empresa tiene flujos atípicos, certificaciones especiales o integraciones propias, armamos un paquete personalizado para tu caso de uso.",
+    "pricing.custom.cta": "Consultar por un paquete a medida",
+
     "footer.tagline": "Gestión operativa para contratistas eléctricos. Hecho en Buenos Aires por FittyAr.",
     "footer.nav": "Navegación",
     "footer.modules": "Módulos",
@@ -438,6 +484,52 @@ const translations = {
     "val.yes": "Yes",
     "val.no": "No",
 
+    "pricing.deploy.cloud": "Managed Cloud (SaaS)",
+    "pricing.deploy.cloud.desc": "We manage the server, cloud database, daily backups, and custom domain. You just open your browser and run your business.",
+    "pricing.deploy.selfhosted": "Self-Hosted (Your data, your machine)",
+    "pricing.deploy.selfhosted.desc": "Download the desktop app to your workstation or deploy Docker to your own VPS / on-premise server. Zero recurring hosting fee.",
+
+    "wizard.badge": "Smart Setup Assistant",
+    "wizard.title": "Not sure which plan fits? Let's build your package",
+    "wizard.subtitle": "Answer 3 simple questions about how your team works and we'll calculate the exact configuration for your operations.",
+    "wizard.step1.title": "Step 1: What is your company's core activity?",
+    "wizard.step1.opt1": "Installations & Trades (Electrical, HVAC, Networking, Plumbing)",
+    "wizard.step1.opt2": "Light Construction & Renovations (Painting, Drywall, Masonry)",
+    "wizard.step1.opt3": "Field Services, Workshops & Facility/Industrial Maintenance",
+    "wizard.step1.opt4": "Store Counter, Toolroom & Hardware Supplies (Materials, Spares)",
+    "wizard.step1.opt5": "Other industry / Mixed commercial operations",
+
+    "wizard.step2.title": "Step 2: How is your team structured daily?",
+    "wizard.step2.opt1": "Solo contractor / Freelancer (I quote, execute and manage alone)",
+    "wizard.step2.opt2": "Small crew (up to 5-10 workers between field and office)",
+    "wizard.step2.opt3": "Multiple simultaneous crews and projects with supervisors",
+    "wizard.step2.opt4": "Established enterprise with sales counter, central depot and admin",
+
+    "wizard.step3.title": "Step 3: What are your most critical needs right now?",
+    "wizard.step3.opt1": "Cash flow, daily expenses and milestone progress certificates",
+    "wizard.step3.opt2": "Commercial invoicing, collections, overdue tracking and payroll",
+    "wizard.step3.opt3": "Site Kanban boards, crew scheduling calendar and bank accounts",
+    "wizard.step3.opt4": "Direct ARCA/CAE electronic invoicing and inventory/toolroom",
+
+    "wizard.step4.title": "Step 4: Where do you prefer your data to live?",
+    "wizard.step4.opt1": "Managed Cloud (instant web access anywhere, zero local installation)",
+    "wizard.step4.opt2": "Self-hosted local (desktop app on my PC or private server)",
+
+    "wizard.result.title": "Your Recommended Configuration:",
+    "wizard.result.plan": "Suggested Plan:",
+    "wizard.result.deploy": "Deployment Mode:",
+    "wizard.result.addons": "Recommended Add-on Modules:",
+    "wizard.result.reason": "Why this stack?",
+    "wizard.btn.next": "Next →",
+    "wizard.btn.prev": "← Back",
+    "wizard.btn.reset": "Start over",
+    "wizard.btn.cta": "Request this configuration by email",
+
+    "pricing.custom.badge": "Flexible Solutions",
+    "pricing.custom.title": "Doesn't fit into these standard presets?",
+    "pricing.custom.desc": "Certaro was built with a modular architecture and configurable domain terminology. If your company operates unique workflows, specialized certifications, or custom integrations, we tailor a custom package for your use case.",
+    "pricing.custom.cta": "Inquire about a custom solution",
+
     "footer.tagline": "Operations for electrical contractors. Made in Buenos Aires by FittyAr.",
     "footer.nav": "Navigation",
     "footer.modules": "Modules",
@@ -554,6 +646,10 @@ if (typeof document !== "undefined") {
   document.addEventListener("DOMContentLoaded", () => {
     applyTranslations();
   });
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = translations;
 }
 
 

@@ -226,6 +226,145 @@
     <p class="section-subtitle" data-i18n="pricing.subtitle">Desde electricistas independientes hasta constructoras con cuadrillas múltiples. Comenzá con tus datos locales y escalá a arquitectura servidor sin fricción.</p>
   </div>
 
+  <!-- CONMUTADOR DE DESPLIEGUE (CLOUD SAAS VS AUTO-ALOJADO) -->
+  <div class="deployment-switcher-wrap">
+    <div class="deployment-toggle" role="group" aria-label="Modalidad de despliegue">
+      <button type="button" class="deploy-btn active" id="deployCloudBtn" onclick="setDeploymentMode('cloud')">
+        <span>☁️</span> <span data-i18n="pricing.deploy.cloud">Cloud Gestionado (SaaS)</span>
+      </button>
+      <button type="button" class="deploy-btn" id="deploySelfBtn" onclick="setDeploymentMode('self')">
+        <span>💻</span> <span data-i18n="pricing.deploy.selfhosted">Auto-alojado (Tus datos, tu máquina)</span>
+      </button>
+    </div>
+    <p class="deploy-banner-desc" id="deployBannerDesc" data-i18n="pricing.deploy.cloud.desc">
+      Nosotros nos encargamos del servidor, base de datos en la nube, backups diarios y dominio. Vos solo abrís el navegador y gestionás tu negocio.
+    </p>
+  </div>
+
+  <!-- ASISTENTE INTERACTIVO DE CONFIGURACION (WIZARD) -->
+  <div class="wizard-box" id="wizardBox">
+    <div class="wizard-progress-bar">
+      <span class="wizard-step-indicator" id="wizardStepIndicator">PASO 1 DE 4 · ASISTENTE INTELIGENTE</span>
+      <div class="wizard-progress-dots">
+        <span class="wizard-dot active" id="wDot1"></span>
+        <span class="wizard-dot" id="wDot2"></span>
+        <span class="wizard-dot" id="wDot3"></span>
+        <span class="wizard-dot" id="wDot4"></span>
+      </div>
+    </div>
+
+    <!-- Paso 1 -->
+    <div class="wizard-step-content" id="wStep1">
+      <h3 class="wizard-step-title" data-i18n="wizard.step1.title">Paso 1: ¿Cuál es la actividad principal de tu empresa?</h3>
+      <div class="wizard-options-list">
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(1, 'instalaciones')">
+          <span data-i18n="wizard.step1.opt1">Instalaciones & Oficios (Electricidad, Climatización, Redes, Sanitarios)</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(1, 'obras')">
+          <span data-i18n="wizard.step1.opt2">Obras Menores, Reformas & Construcción (Pintura, Durlock, Albañilería)</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(1, 'servicios')">
+          <span data-i18n="wizard.step1.opt3">Servicios Técnicos, Talleres & Mantenimiento Edilicio/Industrial</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(1, 'mostrador')">
+          <span data-i18n="wizard.step1.opt4">Venta de Mostrador, Pañol & Ferretería (Insumos, Repuestos)</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(1, 'otro')">
+          <span data-i18n="wizard.step1.opt5">Otro rubro / Actividad mixta comercial</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Paso 2 -->
+    <div class="wizard-step-content" id="wStep2" style="display:none;">
+      <h3 class="wizard-step-title" data-i18n="wizard.step2.title">Paso 2: ¿Cómo está compuesto tu equipo y operativa diaria?</h3>
+      <div class="wizard-options-list">
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(2, 'solo')">
+          <span data-i18n="wizard.step2.opt1">Trabajo unipersonal / Autónomo (yo mismo gestiono y ejecuto)</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(2, 'equipo_chico')">
+          <span data-i18n="wizard.step2.opt2">Cuadrilla reducida (hasta 5-10 operarios en calle y oficina)</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(2, 'multi_cuadrilla')">
+          <span data-i18n="wizard.step2.opt3">Múltiples cuadrillas y proyectos simultáneos con personal a cargo</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(2, 'empresa_grande')">
+          <span data-i18n="wizard.step2.opt4">Empresa consolidada con mostrador, pañol central y administración</span>
+        </button>
+      </div>
+      <div class="wizard-nav">
+        <button type="button" class="btn btn-ghost btn-sm" onclick="prevWizardStep(1)" data-i18n="wizard.btn.prev">← Anterior</button>
+      </div>
+    </div>
+
+    <!-- Paso 3 -->
+    <div class="wizard-step-content" id="wStep3" style="display:none;">
+      <h3 class="wizard-step-title" data-i18n="wizard.step3.title">Paso 3: ¿Qué necesidades son prioritarias en este momento?</h3>
+      <div class="wizard-options-list">
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(3, 'caja_obras')">
+          <span data-i18n="wizard.step3.opt1">Control de gastos, caja diaria y certificados de avance</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(3, 'factura_sueldos')">
+          <span data-i18n="wizard.step3.opt2">Facturación comercial, cobros, mora y liquidaciones quincenales</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(3, 'kanban_bancos')">
+          <span data-i18n="wizard.step3.opt3">Tableros Kanban de obras, calendario de cuadrillas y bancos/cheques</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(3, 'arca_stock')">
+          <span data-i18n="wizard.step3.opt4">Facturación fiscal electrónica ARCA/CAE y control de stock/pañol</span>
+        </button>
+      </div>
+      <div class="wizard-nav">
+        <button type="button" class="btn btn-ghost btn-sm" onclick="prevWizardStep(2)" data-i18n="wizard.btn.prev">← Anterior</button>
+      </div>
+    </div>
+
+    <!-- Paso 4 -->
+    <div class="wizard-step-content" id="wStep4" style="display:none;">
+      <h3 class="wizard-step-title" data-i18n="wizard.step4.title">Paso 4: ¿Dónde preferís que residan tus datos?</h3>
+      <div class="wizard-options-list">
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(4, 'cloud')">
+          <span data-i18n="wizard.step4.opt1">Cloud Gestionado (acceso web desde cualquier equipo, sin instalar nada)</span>
+        </button>
+        <button type="button" class="wizard-option-btn" onclick="selectWizardOption(4, 'local')">
+          <span data-i18n="wizard.step4.opt2">Auto-alojado local (app instalada en mi PC o servidor propio)</span>
+        </button>
+      </div>
+      <div class="wizard-nav">
+        <button type="button" class="btn btn-ghost btn-sm" onclick="prevWizardStep(3)" data-i18n="wizard.btn.prev">← Anterior</button>
+      </div>
+    </div>
+
+    <!-- Resultado Recomendado -->
+    <div class="wizard-step-content" id="wStepResult" style="display:none;">
+      <div class="wizard-result-box">
+        <div class="wizard-result-header">
+          <div>
+            <span style="font-size:var(--text-xs); color:var(--color-text-dim); text-transform:uppercase; font-weight:700;" data-i18n="wizard.result.title">Tu Configuración Recomendada:</span>
+            <div class="wizard-result-plan-badge" id="wResPlanName">Scale ★</div>
+          </div>
+          <span class="wizard-result-deploy-tag" id="wResDeployTag">☁️ Cloud Gestionado</span>
+        </div>
+        <div class="wizard-result-body">
+          <p class="wizard-result-reason" id="wResReason">
+            Basado en tu actividad y dinámica de trabajo, este paquete te brinda control total con la máxima agilidad operativa.
+          </p>
+          <div style="font-size:var(--text-xs); font-weight:700; color:var(--color-text-dim); margin-bottom:.5rem; text-transform:uppercase;" data-i18n="wizard.result.addons">
+            Módulos / Add-ons sugeridos:
+          </div>
+          <ul class="wizard-result-addons" id="wResAddonsList">
+            <li>✓ Tableros Kanban de Obra</li>
+            <li>✓ Calendario de Cuadrillas</li>
+          </ul>
+        </div>
+        <div class="wizard-result-actions">
+          <a class="btn btn-primary" id="wResCtaBtn" href="#contact" data-i18n="wizard.btn.cta">Solicitar esta configuración por mail</a>
+          <button type="button" class="btn btn-ghost btn-sm" onclick="resetWizard()" data-i18n="wizard.btn.reset">Volver a empezar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Fila de Tarjetas de Planes -->
   <div class="pricing-grid">
     <!-- Plan 1: Community -->
@@ -595,6 +734,18 @@
       </table>
     </div>
   </div>
+
+  <!-- BANNER SOLUCIÓN A MEDIDA / OTROS RUBROS -->
+  <div class="custom-solution-banner">
+    <div class="custom-solution-text">
+      <span class="eyebrow" data-i18n="pricing.custom.badge">Soluciones Flexibles</span>
+      <h3 data-i18n="pricing.custom.title">¿Tu operativa o rubro no encaja en estas opciones?</h3>
+      <p data-i18n="pricing.custom.desc">Certaro fue concebido bajo arquitectura modular y terminología adaptable. Si tu empresa tiene flujos atípicos, certificaciones especiales o integraciones propias, armamos un paquete personalizado para tu caso de uso.</p>
+    </div>
+    <div class="custom-solution-action">
+      <a class="btn btn-outline" href="mailto:contacto@fitty.ar?subject=Consulta%20Paquete%20a%20Medida%20Certaro" data-i18n="pricing.custom.cta">Consultar por un paquete a medida</a>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACTO -->
@@ -785,9 +936,256 @@ const io = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-// Listen for locale changes to refresh dynamic caption
+// — Deployment Switcher —
+let currentDeploymentMode = "cloud";
+
+function setDeploymentMode(mode) {
+  currentDeploymentMode = mode;
+  const cloudBtn = document.getElementById("deployCloudBtn");
+  const selfBtn = document.getElementById("deploySelfBtn");
+  const desc = document.getElementById("deployBannerDesc");
+  if (!cloudBtn || !selfBtn || !desc) return;
+
+  if (mode === "cloud") {
+    cloudBtn.classList.add("active");
+    selfBtn.classList.remove("active");
+    desc.setAttribute("data-i18n", "pricing.deploy.cloud.desc");
+    desc.textContent = t("pricing.deploy.cloud.desc");
+  } else {
+    selfBtn.classList.add("active");
+    cloudBtn.classList.remove("active");
+    desc.setAttribute("data-i18n", "pricing.deploy.selfhosted.desc");
+    desc.textContent = t("pricing.deploy.selfhosted.desc");
+  }
+}
+
+// — Interactive Package Wizard —
+const wizardState = {
+  step: 1,
+  answers: { 1: null, 2: null, 3: null, 4: null }
+};
+
+let currentRecommendedPlan = "Scale ★";
+
+const wizardReasons = {
+  community: {
+    es: "Diseñado para profesionales independientes que necesitan ordenar comprobantes, caja diaria y cómputos sin costo ni complejidad de servidores.",
+    en: "Designed for independent professionals needing to organize vouchers, daily cash flow, and cost estimates without recurring infrastructure costs."
+  },
+  essential: {
+    es: "Ideal para equipos y contratistas que precisan emitir comprobantes comerciales, seguir cuentas corrientes y liquidar jornales de forma ágil.",
+    en: "Ideal for growing teams needing commercial invoicing, customer ledger tracking, and automated worker payroll without server hassles."
+  },
+  scale: {
+    es: "Perfecto para empresas con cuadrillas activas que requieren sincronización multi-usuario, tableros Kanban visuales y tesorería bancaria en tiempo real.",
+    en: "Perfect for active contractors with multiple crews requiring multi-user sync, visual Kanban boards, and real-time bank reconciliation."
+  },
+  enterprise: {
+    es: "Paquete corporativo con facturación fiscal directa, control de stock/pañol centralizado y los máximos estándares de seguridad y auditoría.",
+    en: "Corporate tier featuring direct tax invoicing (ARCA/CAE), centralized warehouse/POS inventory, and enterprise-grade security."
+  }
+};
+
+const wizardAddonNames = {
+  arca: {
+    es: "Facturación Fiscal Electrónica ARCA (CAE automático)",
+    en: "ARCA Electronic Tax Invoicing (Automated CAE)"
+  },
+  stock: {
+    es: "Punto de Venta Mostrador (POS) & Control de Stock / Pañol",
+    en: "Point of Sale (POS) Counter & Warehouse Stock Control"
+  },
+  maintenance: {
+    es: "Órdenes de Servicio & Mantenimiento Preventivo",
+    en: "Work Orders & Preventive Maintenance Tracking"
+  },
+  kanban_crews: {
+    es: "Tableros Kanban por Cuadrilla & Georreferencia",
+    en: "Crew-based Kanban Boards & Field Dispatch"
+  },
+  uocra_computos: {
+    es: "Cómputos y Presupuestos con Certificaciones UOCRA",
+    en: "Itemized Cost Estimation & Certified Progress Sheets"
+  }
+};
+
+const deployNames = {
+  cloud: {
+    es: "☁️ Cloud Gestionado (SaaS)",
+    en: "☁️ Managed Cloud (SaaS)"
+  },
+  self: {
+    es: "💻 Auto-alojado (On-Premise)",
+    en: "💻 Self-Hosted (On-Premise)"
+  }
+};
+
+function selectWizardOption(step, val) {
+  wizardState.answers[step] = val;
+
+  const stepContainer = document.getElementById(`wStep${step}`);
+  if (stepContainer) {
+    stepContainer.querySelectorAll(".wizard-option-btn").forEach(btn => {
+      btn.classList.remove("selected");
+    });
+  }
+  if (window.event && window.event.currentTarget) {
+    window.event.currentTarget.classList.add("selected");
+  }
+
+  if (step < 4) {
+    goToWizardStep(step + 1);
+  } else {
+    showWizardResult();
+  }
+}
+
+function prevWizardStep(targetStep) {
+  goToWizardStep(targetStep);
+}
+
+function goToWizardStep(s) {
+  wizardState.step = s;
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById(`wStep${i}`);
+    if (el) el.style.display = (i === s) ? "block" : "none";
+    const dot = document.getElementById(`wDot${i}`);
+    if (dot) dot.classList.toggle("active", i <= s);
+  }
+  const resEl = document.getElementById("wStepResult");
+  if (resEl) resEl.style.display = "none";
+
+  const ind = document.getElementById("wizardStepIndicator");
+  if (ind) {
+    const isEn = (typeof currentLang !== "undefined" && currentLang === "en");
+    ind.textContent = isEn
+      ? `STEP ${s} OF 4 · SMART ASSISTANT`
+      : `PASO ${s} DE 4 · ASISTENTE INTELIGENTE`;
+  }
+}
+
+function resetWizard() {
+  wizardState.step = 1;
+  wizardState.answers = { 1: null, 2: null, 3: null, 4: null };
+  document.querySelectorAll(".wizard-option-btn").forEach(b => b.classList.remove("selected"));
+  goToWizardStep(1);
+}
+
+function showWizardResult() {
+  wizardState.step = 5;
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById(`wStep${i}`);
+    if (el) el.style.display = "none";
+    const dot = document.getElementById(`wDot${i}`);
+    if (dot) dot.classList.add("active");
+  }
+  const resEl = document.getElementById("wStepResult");
+  if (resEl) resEl.style.display = "block";
+
+  const ind = document.getElementById("wizardStepIndicator");
+  if (ind) {
+    const isEn = (typeof currentLang !== "undefined" && currentLang === "en");
+    ind.textContent = isEn
+      ? "RECOMMENDED CONFIGURATION"
+      : "CONFIGURACIÓN RECOMENDADA";
+  }
+
+  renderWizardResultContent();
+}
+
+function renderWizardResultContent() {
+  const isEn = (typeof currentLang !== "undefined" && currentLang === "en");
+  const a1 = wizardState.answers[1];
+  const a2 = wizardState.answers[2];
+  const a3 = wizardState.answers[3];
+  const a4 = wizardState.answers[4];
+
+  let planKey = "scale";
+  let planName = "Scale ★";
+
+  if (a2 === "solo" && a3 === "caja_obras") {
+    planKey = "community";
+    planName = "Community";
+  } else if (a2 === "equipo_chico" || a3 === "factura_sueldos") {
+    planKey = "essential";
+    planName = "Essential";
+  } else if (a2 === "empresa_grande" || a3 === "arca_stock" || a1 === "mostrador") {
+    planKey = "enterprise";
+    planName = "Enterprise";
+  } else {
+    planKey = "scale";
+    planName = "Scale ★";
+  }
+
+  currentRecommendedPlan = planName;
+
+  const planEl = document.getElementById("wResPlanName");
+  if (planEl) planEl.textContent = planName;
+
+  const deployTagEl = document.getElementById("wResDeployTag");
+  if (deployTagEl) {
+    const deployKey = (a4 === "local") ? "self" : "cloud";
+    deployTagEl.textContent = deployNames[deployKey][isEn ? "en" : "es"];
+  }
+
+  const reasonEl = document.getElementById("wResReason");
+  if (reasonEl) {
+    reasonEl.textContent = wizardReasons[planKey][isEn ? "en" : "es"];
+  }
+
+  const addonsListEl = document.getElementById("wResAddonsList");
+  if (addonsListEl) {
+    addonsListEl.innerHTML = "";
+    const chosenAddons = [];
+
+    if (a1 === "mostrador" || a3 === "arca_stock") {
+      chosenAddons.push(wizardAddonNames.arca[isEn ? "en" : "es"]);
+      chosenAddons.push(wizardAddonNames.stock[isEn ? "en" : "es"]);
+    }
+    if (a1 === "servicios") {
+      chosenAddons.push(wizardAddonNames.maintenance[isEn ? "en" : "es"]);
+    }
+    if (a2 === "multi_cuadrilla" || a2 === "empresa_grande" || a3 === "kanban_bancos") {
+      chosenAddons.push(wizardAddonNames.kanban_crews[isEn ? "en" : "es"]);
+    }
+    if (a1 === "obras" || a1 === "instalaciones") {
+      chosenAddons.push(wizardAddonNames.uocra_computos[isEn ? "en" : "es"]);
+    }
+
+    if (chosenAddons.length === 0) {
+      chosenAddons.push(wizardAddonNames.kanban_crews[isEn ? "en" : "es"]);
+      chosenAddons.push(wizardAddonNames.uocra_computos[isEn ? "en" : "es"]);
+    }
+
+    chosenAddons.forEach(text => {
+      const li = document.createElement("li");
+      li.textContent = `✓ ${text}`;
+      addonsListEl.appendChild(li);
+    });
+  }
+
+  updateWizardCtaMailto();
+}
+
+function updateWizardCtaMailto() {
+  const plan = currentRecommendedPlan || "Scale";
+  const deploy = (wizardState.answers[4] === "local") ? "Auto-alojado" : "Cloud Gestionado";
+  const subject = encodeURIComponent(`Consulta Certaro - Plan ${plan} (${deploy})`);
+  const body = encodeURIComponent(
+    `Hola Certaro,\n\nCompleté el asistente de configuración con los siguientes datos:\n- Actividad: ${wizardState.answers[1] || "-"}\n- Equipo: ${wizardState.answers[2] || "-"}\n- Prioridad: ${wizardState.answers[3] || "-"}\n- Modalidad: ${deploy}\n\nPlan recomendado: ${plan}\n\nMe gustaría recibir más información para comenzar.`
+  );
+  const btn = document.getElementById("wResCtaBtn");
+  if (btn) btn.href = `mailto:contacto@fitty.ar?subject=${subject}&body=${body}`;
+}
+
+// Listen for locale changes to refresh dynamic caption & wizard
 window.addEventListener("certaro:localechange", () => {
   galleryGo(gIdx);
+  if (wizardState.step === 5) {
+    renderWizardResultContent();
+  } else {
+    goToWizardStep(wizardState.step);
+  }
 });
 </script>
 </body>
