@@ -1,0 +1,27 @@
+# Certaro
+> Modular ERP for projects, finance, purchasing, inventory, point of sale, payroll and fiscal workflows, built with Rust, Tauri 2 and Vue 3. Desktop app (SQLite) and web server edition (PostgreSQL, Docker). Spanish and English interface.
+
+Certaro tracks cash-flow movements, clients, projects and jobs, progress certificates (with UOCRA adjustment), invoices with partial payments and overdue tracking, staff attendance and payroll settlements. It is a commercial product (Business Source License 1.1); the source repository is private.
+
+## Key Resources
+- [Website](https://certaro.fitty.ar): Landing page, screenshots, installation and plans.
+- [Changelog](https://certaro.fitty.ar/changelog.html): Release history.
+- Contact: contacto@fitty.ar (installer and license requests).
+
+## Features
+- Dashboard with balance, operational alerts and rankings; cash ledger in ARS and USD with exchange rates.
+- Clients, projects and jobs; Kanban board and calendar/scheduler.
+- Progress certificates with UOCRA adjustment and PDF export; invoices with partial payments and overdue tracking.
+- Employees, attendance and payroll settlements; reports in PDF, XLSX, DOCX, CSV and JSON.
+- Roles and permissions (RBAC), Argon2id password hashing, TOTP second factor; JSON backup and restore.
+- Databases: SQLite (desktop), PostgreSQL and MySQL / MariaDB (server).
+- Light and dark theme, command palette, keyboard shortcuts.
+
+## Installation (desktop)
+- Windows: per-user NSIS installer. Program in `%LOCALAPPDATA%\Programs\FittyAr\Certaro`; configuration, databases, attachments and logs in `%APPDATA%\FittyAr\Certaro`.
+- Linux: AppImage, .deb or .rpm; data in `~/.local/share/FittyAr/Certaro`.
+- macOS: .dmg; data in `~/Library/Application Support/FittyAr/Certaro`.
+- Uninstalling keeps user data.
+
+## Notes
+- Screenshots on the website use fictional demo data.

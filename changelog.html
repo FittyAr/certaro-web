@@ -7,7 +7,16 @@
 <meta name="description" content="Historial de versiones y nuevas funciones de Certaro para contratistas eléctricos.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0a0a0d">
+<meta property="og:title" content="Novedades — Certaro">
+<meta property="og:description" content="Historial de versiones y nuevas funciones de Certaro para contratistas eléctricos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://certaro.fitty.ar/changelog.html">
+<meta property="og:site_name" content="Certaro">
+<meta property="og:image" content="https://certaro.fitty.ar/assets/social.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://certaro.fitty.ar/assets/social.png">
 <link rel="icon" href="assets/certaro-logo.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icon.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
 <style>
@@ -69,6 +78,7 @@
       <a href="index.html#problems" data-i18n="nav.benefits">Beneficios</a>
       <a href="index.html#how" data-i18n="nav.how">Cómo funciona</a>
       <a href="index.html#gallery" data-i18n="nav.gallery">Capturas</a>
+      <a href="index.html#install" data-i18n="nav.install">Instalación</a>
       <a href="changelog.html" class="active" data-i18n="nav.changelog">Novedades</a>
       <a href="index.html#contact" data-i18n="nav.contact">Contacto</a>
     </nav>
@@ -94,6 +104,7 @@
     <a href="index.html#problems" onclick="toggleMobileNav(false)" data-i18n="nav.benefits">Beneficios</a>
     <a href="index.html#how" onclick="toggleMobileNav(false)" data-i18n="nav.how">Cómo funciona</a>
     <a href="index.html#gallery" onclick="toggleMobileNav(false)" data-i18n="nav.gallery">Capturas</a>
+    <a href="index.html#install" onclick="toggleMobileNav(false)" data-i18n="nav.install">Instalación</a>
     <a href="changelog.html" class="active" onclick="toggleMobileNav(false)" data-i18n="nav.changelog">Novedades</a>
     <a href="index.html#contact" onclick="toggleMobileNav(false)" data-i18n="nav.contact">Contacto</a>
   </nav>
@@ -111,29 +122,11 @@
   <p class="sub" data-i18n="changelog.subtitle">Cada mejora es para que tu obra funcione mejor.</p>
   
   <div id="changelog-loading" data-i18n="changelog.loading">Cargando novedades…</div>
-  <div id="changelog-error"><span data-i18n="changelog.error">No se pudieron consultar las novedades remotas. Mostrando versión local.</span></div>
   
   <div id="changelog-timeline"></div>
   
   <div style="text-align:center">
     <button id="changelog-toggle" class="btn btn-ghost btn-sm" data-i18n="changelog.showMore">Ver más versiones</button>
-  </div>
-  
-  <div id="changelog-fallback" style="display:none">
-    <article class="cl-entry cl-latest">
-      <div class="cl-dot">01</div>
-      <div class="cl-card">
-        <div class="cl-card-head">
-          <span class="cl-version" data-i18n="changelog.fallback.title">Certaro v0.1 — Versión inicial</span>
-          <span class="cl-date" data-i18n="changelog.fallback.date">Septiembre 2026</span>
-          <span class="cl-badge" data-i18n="changelog.latest">LO ÚLTIMO</span>
-        </div>
-        <div class="cl-group">
-          <span class="cl-tag added" data-i18n="tag.added">Nuevo</span>
-          <ul id="changelog-fallback-list"></ul>
-        </div>
-      </div>
-    </article>
   </div>
   
   <p style="text-align:center;margin-top:2.5rem">

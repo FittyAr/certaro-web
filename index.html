@@ -7,17 +7,39 @@
 <meta name="description" content="Gestión completa para contratistas eléctricos: obras, trabajos, caja, certificaciones UOCRA, facturas, liquidaciones y asistencia. Control total y datos siempre con vos.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0a0a0d">
+<meta name="keywords" content="Certaro, ERP, gestión de obras, contratistas, certificaciones, facturación, liquidación de sueldos, asistencia, Tauri, Rust, Vue, Windows, FittyAr">
 <meta property="og:title" content="Certaro — Tu obra, bajo control">
 <meta property="og:description" content="Todo en un solo lugar. Control operativo y financiero para tu empresa.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://certaro.fitty.ar/">
-<meta property="og:image" content="https://certaro.fitty.ar/assets/screen-dashboard.png">
+<meta property="og:site_name" content="Certaro">
+<meta property="og:image" content="https://certaro.fitty.ar/assets/social.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Certaro — Tu obra, bajo control">
+<meta name="twitter:description" content="Todo en un solo lugar. Control operativo y financiero para tu empresa.">
+<meta name="twitter:image" content="https://certaro.fitty.ar/assets/social.png">
 <link rel="icon" href="assets/certaro-logo.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icon.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/index.css">
 <link rel="canonical" href="https://certaro.fitty.ar/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Certaro",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows, Linux, macOS",
+  "description": "Modular ERP for projects, finance, purchasing, inventory, point of sale, payroll and fiscal workflows. Desktop (Tauri) and web server editions.",
+  "url": "https://certaro.fitty.ar/",
+  "image": "https://certaro.fitty.ar/assets/social.png",
+  "inLanguage": ["es", "en"],
+  "author": { "@type": "Organization", "name": "FittyAr", "url": "https://fitty.ar/" }
+}
+</script>
 </head>
 <body>
 
@@ -34,6 +56,7 @@
       <a href="#problems" data-i18n="nav.benefits">Beneficios</a>
       <a href="#how" data-i18n="nav.how">Cómo funciona</a>
       <a href="#gallery" data-i18n="nav.gallery">Capturas</a>
+      <a href="#install" data-i18n="nav.install">Instalación</a>
       <a href="#pricing" data-i18n="nav.pricing">Precios</a>
       <a href="changelog.html" data-i18n="nav.changelog">Novedades</a>
       <a href="#contact" data-i18n="nav.contact">Contacto</a>
@@ -60,6 +83,7 @@
     <a href="#problems" onclick="toggleMobileNav(false)" data-i18n="nav.benefits">Beneficios</a>
     <a href="#how" onclick="toggleMobileNav(false)" data-i18n="nav.how">Cómo funciona</a>
     <a href="#gallery" onclick="toggleMobileNav(false)" data-i18n="nav.gallery">Capturas</a>
+    <a href="#install" onclick="toggleMobileNav(false)" data-i18n="nav.install">Instalación</a>
     <a href="#pricing" onclick="toggleMobileNav(false)" data-i18n="nav.pricing">Precios</a>
     <a href="changelog.html" onclick="toggleMobileNav(false)" data-i18n="nav.changelog">Novedades</a>
     <a href="#contact" onclick="toggleMobileNav(false)" data-i18n="nav.contact">Contacto</a>
@@ -84,8 +108,8 @@
       <a class="btn btn-ghost" href="#how" data-i18n="hero.secondary">Ver cómo funciona</a>
     </div>
   </div>
-  <div class="hero-media" onclick="openLightbox('assets/screen-dashboard.png', t('gallery.cap.dashboard'))" role="button" tabindex="0" aria-label="Ampliar imagen del panel principal" onkeydown="if(event.key==='Enter'||event.key===' ')openLightbox('assets/screen-dashboard.png', t('gallery.cap.dashboard'))">
-    <img src="assets/screen-dashboard.png" alt="Certaro — panel principal con balance y obras" data-i18n-alt="showcase.alt">
+  <div class="hero-media" onclick="openLightbox('assets/screens/01-panel.webp', t('gallery.cap.panel'))" role="button" tabindex="0" aria-label="Ampliar imagen del panel principal" onkeydown="if(event.key==='Enter'||event.key===' ')openLightbox('assets/screens/01-panel.webp', t('gallery.cap.panel'))">
+    <img src="assets/screens/01-panel.webp" width="1600" height="1000" fetchpriority="high" alt="Certaro — panel principal con balance y obras" data-i18n-alt="showcase.alt">
     <div class="hero-media-badge" data-i18n="showcase.zoom">🔍 Clic para ampliar</div>
   </div>
 </section>
@@ -164,8 +188,8 @@
   <div class="how-grid">
     <div class="how-step">
       <span class="how-num">01</span>
-      <h3 data-i18n="how.s1.title">Importá tu base vieja</h3>
-      <p data-i18n="how.s1.desc">Si venís del sistema anterior, migrás tus datos en un click. Si empezás de cero, cargás directo.</p>
+      <h3 data-i18n="how.s1.title">Instalá y creá tu empresa</h3>
+      <p data-i18n="how.s1.desc">Al primer inicio elegís: empezar desde cero con los datos de tu empresa, explorar con datos de demostración o restaurar un backup JSON.</p>
     </div>
     <div class="how-step">
       <span class="how-num">02</span>
@@ -189,7 +213,7 @@
   </div>
   <div class="gallery-wrap">
     <div class="gallery-main" id="galleryMain" onclick="openCurrentGalleryLightbox()" role="button" tabindex="0" aria-label="Ampliar captura actual" onkeydown="if(event.key==='Enter'||event.key===' ')openCurrentGalleryLightbox()">
-      <img id="galleryImg" src="assets/screen-dashboard.png" alt="Certaro Screenshot">
+      <img id="galleryImg" src="assets/screens/01-panel.webp" width="1600" height="1000" alt="Certaro Screenshot">
       <div class="gallery-zoom-hint" data-i18n="gallery.zoom">🔍 Clic para ampliar</div>
       <div class="gallery-nav" onclick="event.stopPropagation()">
         <button type="button" onclick="galleryPrev()" aria-label="Imagen anterior" data-i18n-aria-label="gallery.prev">‹</button>
@@ -197,24 +221,83 @@
       </div>
     </div>
     <div class="gallery-strip" id="galleryStrip" role="tablist" aria-label="Galería de capturas">
-      <button class="gallery-thumb active" onclick="galleryGo(0)" role="tab" aria-selected="true" aria-label="Dashboard">
-        <img src="assets/screen-dashboard.png" alt="thumb dashboard">
-        <span data-i18n="gallery.thumb.dashboard">Dashboard</span>
+      <button class="gallery-thumb active" onclick="galleryGo(0)" role="tab" aria-selected="true" aria-label="Panel">
+        <img src="assets/screens/01-panel-thumb.webp" width="320" height="200" loading="lazy" alt="">
+        <span data-i18n="gallery.thumb.panel">Panel</span>
       </button>
       <button class="gallery-thumb" onclick="galleryGo(1)" role="tab" aria-selected="false" aria-label="Movimientos">
-        <img src="assets/screen-movimientos.png" alt="thumb movimientos">
+        <img src="assets/screens/02-movimientos-thumb.webp" width="320" height="200" loading="lazy" alt="">
         <span data-i18n="gallery.thumb.movimientos">Movimientos</span>
       </button>
-      <button class="gallery-thumb" onclick="galleryGo(2)" role="tab" aria-selected="false" aria-label="Facturas">
-        <img src="assets/screen-facturas.png" alt="thumb facturas">
-        <span data-i18n="gallery.thumb.facturas">Facturas</span>
+      <button class="gallery-thumb" onclick="galleryGo(2)" role="tab" aria-selected="false" aria-label="Tablero Kanban">
+        <img src="assets/screens/03-kanban-thumb.webp" width="320" height="200" loading="lazy" alt="">
+        <span data-i18n="gallery.thumb.kanban">Tablero Kanban</span>
       </button>
-      <button class="gallery-thumb" onclick="galleryGo(3)" role="tab" aria-selected="false" aria-label="Asistencia">
-        <img src="assets/screen-asistencia.png" alt="thumb asistencia">
-        <span data-i18n="gallery.thumb.asistencia">Asistencia</span>
+      <button class="gallery-thumb" onclick="galleryGo(3)" role="tab" aria-selected="false" aria-label="Buscador">
+        <img src="assets/screens/04-palette-thumb.webp" width="320" height="200" loading="lazy" alt="">
+        <span data-i18n="gallery.thumb.palette">Buscador</span>
+      </button>
+      <button class="gallery-thumb" onclick="galleryGo(4)" role="tab" aria-selected="false" aria-label="Tema claro">
+        <img src="assets/screens/05-panel-claro-thumb.webp" width="320" height="200" loading="lazy" alt="">
+        <span data-i18n="gallery.thumb.claro">Tema claro</span>
       </button>
     </div>
-    <div class="gallery-caption" id="galleryCaption" data-i18n="gallery.cap.dashboard">Panel principal — balance en tiempo real, alertas de vencimiento y ranking de obras</div>
+    <div class="gallery-caption" id="galleryCaption" data-i18n="gallery.cap.panel">Panel — balance, alertas operativas y estado de trabajos y liquidaciones de un vistazo</div>
+  </div>
+</section>
+
+<!-- INSTALACIÓN -->
+<section id="install" class="section container reveal">
+  <div class="section-header">
+    <span class="eyebrow" data-i18n="install.eyebrow">Instalación</span>
+    <h2 class="section-title" data-i18n="install.title">Instalá Certaro en tu PC</h2>
+    <p class="section-subtitle" data-i18n="install.subtitle">Instalador de escritorio por usuario, con datos locales. Todo vive bajo la carpeta compartida FittyAr.</p>
+  </div>
+
+  <div class="install-terminal">
+    <div class="install-terminal-head">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="install-terminal-title" id="installTitle">Windows</span>
+    </div>
+    <div class="install-tabs" role="tablist" aria-label="Sistema operativo">
+      <button type="button" class="install-tab active" id="tab-windows" role="tab" aria-selected="true" onclick="installTab('windows')">Windows</button>
+      <button type="button" class="install-tab" id="tab-linux" role="tab" aria-selected="false" onclick="installTab('linux')">Linux</button>
+      <button type="button" class="install-tab" id="tab-macos" role="tab" aria-selected="false" onclick="installTab('macos')">macOS</button>
+    </div>
+    <div class="install-body">
+      <div class="install-row">
+        <span class="install-label" data-i18n="install.row.app">Programa</span>
+        <code id="pathApp">%LOCALAPPDATA%\Programs\FittyAr\Certaro</code>
+      </div>
+      <div class="install-row">
+        <span class="install-label" data-i18n="install.row.data">Datos y configuración</span>
+        <code id="pathData">%APPDATA%\FittyAr\Certaro</code>
+      </div>
+      <p class="install-note" id="installNote" data-i18n="install.note.windows">Instalador NSIS por usuario, sin permisos de administrador. Al desinstalar se quita el programa (y la carpeta FittyAr si queda vacía); tus datos se conservan.</p>
+      <div class="install-copy">
+        <button type="button" class="btn btn-ghost btn-sm" id="copyPathsBtn" onclick="copyInstallPaths()" data-i18n="install.copy">📋 Copiar rutas</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="install-extras">
+    <div class="install-extra">
+      <strong data-i18n="install.x1.title">Primer inicio</strong>
+      <span data-i18n="install.x1.desc">Empezá desde cero con los datos de tu empresa, cargá datos de demostración o restaurá un backup JSON.</span>
+    </div>
+    <div class="install-extra">
+      <strong data-i18n="install.x2.title">Tus datos, locales</strong>
+      <span data-i18n="install.x2.desc">La edición de escritorio guarda en SQLite en tu equipo. También existe una edición servidor (web) con PostgreSQL y Docker.</span>
+    </div>
+    <div class="install-extra">
+      <strong data-i18n="install.x3.title">Venís de una versión anterior</strong>
+      <span data-i18n="install.x3.desc">Si tenés datos en la ubicación anterior, se mueven a la carpeta nueva en el primer inicio; si no se puede mover, se copian y no se borra nada.</span>
+    </div>
+  </div>
+
+  <div class="install-cta">
+    <a class="btn btn-primary" id="installCtaBtn" href="mailto:contacto@fitty.ar?subject=Solicitud%20de%20instalador%20Certaro" data-i18n="install.cta">Pedir el instalador</a>
+    <span class="install-cta-note" data-i18n="install.cta.note">Certaro es un producto comercial: escribinos y te enviamos el instalador y la licencia.</span>
   </div>
 </section>
 
@@ -919,6 +1002,7 @@
         <a href="#problems" data-i18n="nav.benefits">Beneficios</a>
         <a href="#how" data-i18n="nav.how">Cómo funciona</a>
         <a href="#gallery" data-i18n="nav.gallery">Capturas</a>
+        <a href="#install" data-i18n="nav.install">Instalación</a>
         <a href="#pricing" data-i18n="nav.pricing">Precios</a>
         <a href="changelog.html" data-i18n="nav.changelog">Novedades</a>
         <a href="#contact" data-i18n="nav.contact">Contacto</a>
@@ -927,9 +1011,9 @@
         <h4 data-i18n="footer.modules">Módulos</h4>
         <a href="#gallery" onclick="galleryGo(0)" data-i18n="footer.mod.obras">Obras y Trabajos</a>
         <a href="#gallery" onclick="galleryGo(1)" data-i18n="footer.mod.caja">Caja y Movimientos</a>
-        <a href="#gallery" onclick="galleryGo(2)" data-i18n="footer.mod.facturas">Facturación y Mora</a>
+        <a href="#gallery" onclick="galleryGo(0)" data-i18n="footer.mod.facturas">Facturación y Mora</a>
         <a href="#gallery" onclick="galleryGo(0)" data-i18n="footer.mod.certificados">Certificados UOCRA</a>
-        <a href="#gallery" onclick="galleryGo(3)" data-i18n="footer.mod.asistencia">Asistencia y Sueldos</a>
+        <a href="#gallery" onclick="galleryGo(0)" data-i18n="footer.mod.asistencia">Asistencia y Sueldos</a>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.contact">Contacto</h4>
@@ -956,16 +1040,18 @@
 <script src="js/translations.js"></script>
 <script>
 const galleryImages = [
-  "assets/screen-dashboard.png",
-  "assets/screen-movimientos.png",
-  "assets/screen-facturas.png",
-  "assets/screen-asistencia.png"
+  "assets/screens/01-panel.webp",
+  "assets/screens/02-movimientos.webp",
+  "assets/screens/03-kanban.webp",
+  "assets/screens/04-palette.webp",
+  "assets/screens/05-panel-claro.webp"
 ];
 const captions = [
-  "gallery.cap.dashboard",
+  "gallery.cap.panel",
   "gallery.cap.movimientos",
-  "gallery.cap.facturas",
-  "gallery.cap.asistencia"
+  "gallery.cap.kanban",
+  "gallery.cap.palette",
+  "gallery.cap.claro"
 ];
 let gIdx = 0;
 
@@ -993,6 +1079,50 @@ function galleryGo(i) {
 
 function galleryPrev() { galleryGo((gIdx - 1 + galleryImages.length) % galleryImages.length); }
 function galleryNext() { galleryGo((gIdx + 1) % galleryImages.length); }
+
+
+const INSTALL_PATHS = {
+  windows: { app: "%LOCALAPPDATA%\\Programs\\FittyAr\\Certaro", data: "%APPDATA%\\FittyAr\\Certaro", title: "Windows" },
+  linux:   { app: null, data: "~/.local/share/FittyAr/Certaro", title: "Linux" },
+  macos:   { app: "/Applications", data: "~/Library/Application Support/FittyAr/Certaro", title: "macOS" }
+};
+let installOS = "windows";
+function installTab(os) {
+  installOS = os;
+  const p = INSTALL_PATHS[os];
+  ["windows", "linux", "macos"].forEach(k => {
+    const b = document.getElementById("tab-" + k);
+    if (!b) return;
+    b.classList.toggle("active", k === os);
+    b.setAttribute("aria-selected", k === os ? "true" : "false");
+  });
+  document.getElementById("installTitle").textContent = p.title;
+  const appEl = document.getElementById("pathApp");
+  if (p.app) { appEl.textContent = p.app; appEl.removeAttribute("data-i18n"); }
+  else { appEl.textContent = t("install.linux.app"); appEl.setAttribute("data-i18n", "install.linux.app"); }
+  document.getElementById("pathData").textContent = p.data;
+  const note = document.getElementById("installNote");
+  note.setAttribute("data-i18n", "install.note." + os);
+  note.textContent = t("install.note." + os);
+}
+function copyInstallPaths() {
+  const p = INSTALL_PATHS[installOS];
+  const text = (p.app ? p.app + "\n" : "") + p.data;
+  const btn = document.getElementById("copyPathsBtn");
+  const done = () => {
+    btn.textContent = t("install.copied");
+    setTimeout(() => { btn.textContent = t("install.copy"); }, 2500);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done).catch(() => {});
+  }
+}
+if (/Linux|X11/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
+  document.addEventListener("DOMContentLoaded", () => installTab("linux"));
+} else if (/Mac OS X|Macintosh/.test(navigator.userAgent) && !/iPhone|iPad/.test(navigator.userAgent)) {
+  document.addEventListener("DOMContentLoaded", () => installTab("macos"));
+}
+window.addEventListener("certaro:localechange", () => { installTab(installOS); });
 
 function openCurrentGalleryLightbox() {
   openLightbox(galleryImages[gIdx], t(captions[gIdx]));

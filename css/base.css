@@ -180,7 +180,8 @@ section[id], div[id] {
 .nav-links a {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-  padding: .35rem .65rem;
+  padding: .35rem .5rem;
+  white-space: nowrap;
   border-radius: var(--radius-sm);
   transition: background .15s, color .15s;
 }
@@ -519,3 +520,9 @@ section[id], div[id] {
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
 
+
+@media (max-width: 1340px) {
+  .nav-links { display: none; }
+  .topbar-actions .btn-primary { display: none; }
+  .hamburger { display: inline-flex; }
+}
