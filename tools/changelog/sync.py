@@ -130,7 +130,11 @@ def main() -> None:
         path = SITE / page
         wanted[path] = render_page(read(path), version)
 
-    stale = [p for p, t in wanted.items() if not p.exists() or read(p) != t]
+    # Line endings depend on the checkout (core.autocrlf), so they never count as a change.
+    def same(path: Path, text: str) -> bool:
+        return path.exists() and read(path).replace("\r\n", "\n") == text.replace("\r\n", "\n")
+
+    stale = [p for p, t in wanted.items() if not same(p, t)]
     if args.check:
         for p in stale:
             print(f"out of date: {p.relative_to(SITE)}", file=sys.stderr)
