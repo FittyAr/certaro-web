@@ -39,8 +39,12 @@ python tools/showcase/publish.py $env:TEMP\certaro-shots\raw <path-to-certaro-we
 Notes:
 
 - Without a license only the core modules are available (Panel, Movimientos, Clientes, Kanban,
-  Calendario), so Obras, Facturas, Certificados and Asistencia cannot be captured, and calendar
-  events cannot be created. With a development license, add captures of those screens.
+  Calendario), so Obras, Facturas, Certificados, Asistencia and Liquidaciones cannot be captured,
+  and calendar events cannot be created. Certaro has no development license mode: a license must
+  be signed by a key in its embedded trust map (`trusted-keys.json`), i.e. issued by Certaro
+  Licencias. Add those captures once such a license (for the demo company's CUIT) is available.
+- `publish.py` also runs `tools/changelog/sync.py`, so the site version follows Certaro's
+  `CHANGELOG.md`.
 - The theme button cycles system, light and dark; `capture.py` assumes it starts in dark.
 - The dev build shows a PrimeUI license badge when no key is configured; `capture.py` hides it.
 - Check every capture before publishing: the texts and coordinates depend on the UI.

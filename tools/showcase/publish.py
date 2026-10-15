@@ -1,7 +1,12 @@
 """Turn the raw captures into the site assets: WebP slides, thumbnails and the social card.
 
     python publish.py RAW_DIR SITE_ROOT
+
+It also refreshes the release data (js/releases.js and the version shown by the site) from
+../Certaro/CHANGELOG.md through tools/changelog/sync.py, so a publish never leaves the site on an
+old version.
 """
+import subprocess
 import sys
 from pathlib import Path
 
@@ -51,10 +56,10 @@ def social(panel: Image.Image) -> Image.Image:
     icon = mark(88)
     bg.paste(icon, (56, 56), icon)
     d.text((164, 100), "certaro", font=ImageFont.truetype(BOLD, 40), fill=(245, 245, 247), anchor="lm")
-    d.text((56, 230), "Tu obra,", font=ImageFont.truetype(BOLD, 68), fill=(245, 245, 247))
+    d.text((56, 230), "Tu operación,", font=ImageFont.truetype(BOLD, 68), fill=(245, 245, 247))
     d.text((56, 310), "bajo control.", font=ImageFont.truetype(BOLD, 68), fill=(255, 184, 108))
     f = ImageFont.truetype(REGULAR, 23)
-    for i, line in enumerate(["Obras, caja, certificaciones,", "facturas y sueldos en un solo", "lugar."]):
+    for i, line in enumerate(["ERP modular: obras, finanzas,", "compras, inventario, ventas,", "personal y fiscalidad."]):
         d.text((56, 425 + i * 34), line, font=f, fill=(155, 160, 179))
     d.text((56, 566), "certaro.fitty.ar", font=ImageFont.truetype(BOLD, 26), fill=(34, 211, 238))
     shot = panel.convert("RGB").resize((580, 363), Image.LANCZOS)
@@ -81,6 +86,7 @@ def main(raw: Path, site: Path) -> None:
         img.resize((320, 200), Image.LANCZOS).save(screens / f"{dst}-thumb.webp", "WEBP", quality=80, method=6)
     mark(256).save(site / "assets" / "icon.png")
     social(Image.open(raw / "panel.png")).save(site / "assets" / "social.png", optimize=True)
+    subprocess.run([sys.executable, str(site / "tools" / "changelog" / "sync.py")], check=True)
 
 
 if __name__ == "__main__":
