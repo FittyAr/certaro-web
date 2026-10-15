@@ -33,8 +33,8 @@ const translations = {
     "install.x3.desc": "Si tenés datos en la ubicación anterior, se mueven a la carpeta nueva en el primer inicio; si no se puede mover, se copian y no se borra nada.",
     "install.cta": "Pedir el instalador",
     "install.cta.note": "Certaro es un producto comercial: escribinos y te enviamos el instalador y la licencia.",
-    "meta.title": "Certaro — Tu obra, bajo control",
-    "meta.description": "Gestión completa para contratistas eléctricos: obras, trabajos, caja, certificaciones UOCRA, facturas, liquidaciones y asistencia. Control total y tus datos siempre con vos.",
+    "meta.title": "Certaro — ERP modular: tu operación, bajo control",
+    "meta.description": "ERP modular para obras, finanzas, compras, inventario, punto de venta, personal y fiscalidad. Escritorio con SQLite o servidor con PostgreSQL, en español e inglés.",
 
     "skip.content": "Saltar al contenido principal",
 
@@ -47,9 +47,9 @@ const translations = {
     "nav.menu": "Menú",
     "nav.close": "Cerrar",
 
-    "hero.badge": "Para contratistas eléctricos",
-    "hero.title": "Tu obra,<br>bajo control.",
-    "hero.subtitle": "Movimientos, obras, certificaciones, facturas y sueldos — todo en un solo lugar. Control operativo, financiero y modular en constante evolución.",
+    "hero.badge": "ERP modular · Escritorio y servidor",
+    "hero.title": "Tu operación,<br>bajo control.",
+    "hero.subtitle": "Obras, finanzas, compras, inventario, punto de venta, personal y fiscalidad en un solo ERP. Combiná los módulos que tu negocio necesita, en escritorio o en servidor.",
     "hero.cta": "Solicitar demo",
     "hero.secondary": "Ver cómo funciona",
 
@@ -210,7 +210,7 @@ const translations = {
     "pricing.feat.support": "Nivel de soporte técnico",
     "pricing.feat.whitelabel": "Personalización White-Label",
 
-    "val.personal_use": "Personal / Libre",
+    "val.personal_use": "Personal / Gratuita",
     "val.commercial": "Comercial",
     "val.desktop_sqlite": "Escritorio (SQLite)",
     "val.dual_mode": "Escritorio o Red Local",
@@ -347,7 +347,7 @@ const translations = {
     "pricing.custom.desc": "Certaro fue concebido bajo arquitectura modular y terminología adaptable. Si tu empresa tiene flujos atípicos, certificaciones especiales o integraciones propias, armamos un paquete personalizado para tu caso de uso.",
     "pricing.custom.cta": "Consultar por un paquete a medida",
 
-    "footer.tagline": "Gestión operativa para contratistas eléctricos. Hecho en Buenos Aires por FittyAr.",
+    "footer.tagline": "ERP modular para gestionar tu empresa. Hecho en Buenos Aires por FittyAr.",
     "footer.nav": "Navegación",
     "footer.modules": "Módulos",
     "footer.mod.obras": "Obras y Trabajos",
@@ -356,11 +356,11 @@ const translations = {
     "footer.mod.certificados": "Certificados UOCRA",
     "footer.mod.asistencia": "Asistencia y Sueldos",
     "footer.contact": "Contacto",
-    "footer.version": "v0.1 · JetBrains Mono · Amber phosphor",
+    "footer.version": "JetBrains Mono · Amber phosphor",
     "footer.top": "Volver arriba ↑",
 
     "changelog.metaTitle": "Novedades — Certaro",
-    "changelog.metaDesc": "Historial de versiones y nuevas funciones de Certaro para contratistas eléctricos.",
+    "changelog.metaDesc": "Historial de versiones y nuevas funciones de Certaro, el ERP modular de FittyAr.",
     "changelog.title": "Novedades de Certaro",
     "changelog.subtitle": "Cada mejora es para que tu obra funcione mejor.",
     "changelog.latest": "LO ÚLTIMO",
@@ -410,8 +410,8 @@ const translations = {
     "install.x3.desc": "Data left in the previous location is moved to the new folder on first launch; if it cannot be moved it is copied and nothing is deleted.",
     "install.cta": "Request the installer",
     "install.cta.note": "Certaro is a commercial product: write to us and we will send you the installer and license.",
-    "meta.title": "Certaro — Your site, under control",
-    "meta.description": "Complete management for electrical contractors: sites, jobs, cash flow, UOCRA certificates, invoices, payroll and attendance. Full control, your data stays with you.",
+    "meta.title": "Certaro — Modular ERP: your business, under control",
+    "meta.description": "Modular ERP for projects, finance, purchasing, inventory, point of sale, payroll and fiscal workflows. Desktop with SQLite or server with PostgreSQL, in Spanish and English.",
 
     "skip.content": "Skip to main content",
 
@@ -424,9 +424,9 @@ const translations = {
     "nav.menu": "Menu",
     "nav.close": "Close",
 
-    "hero.badge": "For electrical contractors",
-    "hero.title": "Your site,<br>under control.",
-    "hero.subtitle": "Cash flow, sites, certificates, invoices and payroll — all in one place. Operational, financial and modular management in continuous evolution.",
+    "hero.badge": "Modular ERP · Desktop and server",
+    "hero.title": "Your business,<br>under control.",
+    "hero.subtitle": "Projects, finance, purchasing, inventory, point of sale, payroll and fiscal workflows in one ERP. Combine the modules your business needs, on desktop or on a server.",
     "hero.cta": "Request demo",
     "hero.secondary": "See how it works",
 
@@ -587,7 +587,7 @@ const translations = {
     "pricing.feat.support": "Technical support level",
     "pricing.feat.whitelabel": "White-Label customization",
 
-    "val.personal_use": "Personal / Free",
+    "val.personal_use": "Personal / Free of charge",
     "val.commercial": "Commercial",
     "val.desktop_sqlite": "Desktop (SQLite)",
     "val.dual_mode": "Desktop or Local Network",
@@ -724,7 +724,7 @@ const translations = {
     "pricing.custom.desc": "Certaro was built with a modular architecture and configurable domain terminology. If your company operates unique workflows, specialized certifications, or custom integrations, we tailor a custom package for your use case.",
     "pricing.custom.cta": "Inquire about a custom solution",
 
-    "footer.tagline": "Operations for electrical contractors. Made in Buenos Aires by FittyAr.",
+    "footer.tagline": "Modular ERP to run your business. Made in Buenos Aires by FittyAr.",
     "footer.nav": "Navigation",
     "footer.modules": "Modules",
     "footer.mod.obras": "Sites & Jobs",
@@ -733,11 +733,11 @@ const translations = {
     "footer.mod.certificados": "UOCRA Certificates",
     "footer.mod.asistencia": "Attendance & Payroll",
     "footer.contact": "Contact",
-    "footer.version": "v0.1 · JetBrains Mono · Amber phosphor",
+    "footer.version": "JetBrains Mono · Amber phosphor",
     "footer.top": "Back to top ↑",
 
     "changelog.metaTitle": "What's new — Certaro",
-    "changelog.metaDesc": "Release history and new features in Certaro for electrical contractors.",
+    "changelog.metaDesc": "Release history and new features of Certaro, FittyAr's modular ERP.",
     "changelog.title": "What's new in Certaro",
     "changelog.subtitle": "Every improvement is to make your site run better.",
     "changelog.latest": "LATEST",

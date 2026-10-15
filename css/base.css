@@ -516,6 +516,7 @@ section[id], div[id] {
   .section { padding: 3.75rem 0; }
 }
 @media (max-width: 520px) {
+  .topbar .logo span.tld { display: none; } /* keeps the menu button inside a 375px viewport */
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }

@@ -1,7 +1,7 @@
 # Certaro
 > Modular ERP for projects, finance, purchasing, inventory, point of sale, payroll and fiscal workflows, built with Rust, Tauri 2 and Vue 3. Desktop app (SQLite) and web server edition (PostgreSQL, Docker). Spanish and English interface.
 
-Certaro tracks cash-flow movements, clients, projects and jobs, progress certificates (with UOCRA adjustment), invoices with partial payments and overdue tracking, staff attendance and payroll settlements. It is a commercial product (Business Source License 1.1); the source repository is private.
+Certaro tracks cash-flow movements, clients, projects and jobs, progress certificates (with UOCRA adjustment), invoices with partial payments and overdue tracking, staff attendance and payroll settlements. It is proprietary, closed-source commercial software by FittyAr (all rights reserved); use requires a written commercial license.
 
 ## Key Resources
 - [Website](https://certaro.fitty.ar): Landing page, screenshots, installation and plans.

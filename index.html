@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Certaro — Tu obra, bajo control</title>
-<meta name="description" content="Gestión completa para contratistas eléctricos: obras, trabajos, caja, certificaciones UOCRA, facturas, liquidaciones y asistencia. Control total y datos siempre con vos.">
+<title>Certaro — ERP modular: tu operación, bajo control</title>
+<meta name="description" content="ERP modular para obras, finanzas, compras, inventario, punto de venta, personal y fiscalidad. Escritorio con SQLite o servidor con PostgreSQL, en español e inglés.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0a0a0d">
 <meta name="keywords" content="Certaro, ERP, gestión de obras, contratistas, certificaciones, facturación, liquidación de sueldos, asistencia, Tauri, Rust, Vue, Windows, FittyAr">
-<meta property="og:title" content="Certaro — Tu obra, bajo control">
+<meta property="og:title" content="Certaro — ERP modular: tu operación, bajo control">
 <meta property="og:description" content="Todo en un solo lugar. Control operativo y financiero para tu empresa.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://certaro.fitty.ar/">
@@ -17,7 +17,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Certaro — Tu obra, bajo control">
+<meta name="twitter:title" content="Certaro — ERP modular: tu operación, bajo control">
 <meta name="twitter:description" content="Todo en un solo lugar. Control operativo y financiero para tu empresa.">
 <meta name="twitter:image" content="https://certaro.fitty.ar/assets/social.png">
 <link rel="icon" href="assets/certaro-logo.svg" type="image/svg+xml">
@@ -32,6 +32,7 @@
   "@type": "SoftwareApplication",
   "name": "Certaro",
   "applicationCategory": "BusinessApplication",
+  "softwareVersion": "2.0.0",
   "operatingSystem": "Windows, Linux, macOS",
   "description": "Modular ERP for projects, finance, purchasing, inventory, point of sale, payroll and fiscal workflows. Desktop (Tauri) and web server editions.",
   "url": "https://certaro.fitty.ar/",
@@ -100,9 +101,9 @@
 <!-- HERO -->
 <section id="hero" class="container hero reveal">
   <div class="hero-text">
-    <span class="eyebrow" data-i18n="hero.badge">Para contratistas eléctricos</span>
-    <h1 data-i18n="hero.title">Tu obra,<br>bajo control.</h1>
-    <p class="hero-subtitle" data-i18n="hero.subtitle">Movimientos, obras, certificaciones, facturas y sueldos — todo en un solo lugar. Control operativo, financiero y modular en constante evolución.</p>
+    <span class="eyebrow" data-i18n="hero.badge">ERP modular · Escritorio y servidor</span>
+    <h1 data-i18n="hero.title">Tu operación,<br>bajo control.</h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Obras, finanzas, compras, inventario, punto de venta, personal y fiscalidad en un solo ERP. Combiná los módulos que tu negocio necesita, en escritorio o en servidor.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">Solicitar demo</a>
       <a class="btn btn-ghost" href="#how" data-i18n="hero.secondary">Ver cómo funciona</a>
@@ -728,7 +729,7 @@
           </tr>
           <tr>
             <td data-i18n="pricing.feat.license">Tipo de licencia</td>
-            <td><span class="cell-val" data-i18n="val.personal_use">Personal / Libre</span></td>
+            <td><span class="cell-val" data-i18n="val.personal_use">Personal / Gratuita</span></td>
             <td><span class="cell-val" data-i18n="val.commercial">Comercial</span></td>
             <td class="featured-col"><span class="cell-val" data-i18n="val.commercial">Comercial</span></td>
             <td><span class="cell-val" data-i18n="val.commercial">Comercial</span></td>
@@ -995,7 +996,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo"><span class="logo-mark">C</span> certaro<span class="tld">.fitty.ar</span></div>
-        <p data-i18n="footer.tagline">Gestión operativa para contratistas eléctricos. Hecho en Buenos Aires por FittyAr.</p>
+        <p data-i18n="footer.tagline">ERP modular para gestionar tu empresa. Hecho en Buenos Aires por FittyAr.</p>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.nav">Navegación</h4>
@@ -1022,7 +1023,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span><span class="status-dot"></span> <span data-i18n="footer.version">v0.1 · JetBrains Mono · Amber phosphor</span></span>
+      <span><span class="status-dot"></span> <a href="changelog.html" data-app-version>v2.0.0</a> · <span data-i18n="footer.version">JetBrains Mono · Amber phosphor</span></span>
       <span>© 2026 FittyAr · <a href="#hero" data-i18n="footer.top">Volver arriba ↑</a></span>
     </div>
   </div>
@@ -1038,6 +1039,7 @@
 </div>
 
 <script src="js/translations.js"></script>
+<script src="js/releases.js"></script>
 <script>
 const galleryImages = [
   "assets/screens/01-panel.webp",
